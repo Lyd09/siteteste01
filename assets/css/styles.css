@@ -334,3 +334,13 @@ footer .footer-flex {
         margin-bottom: 0.5rem;
     }
 }
+
+/* Ajuste para dispositivos móveis */
+@media (max-width: 767px) {
+    .right-arrow {
+        right: 10px; /* Reposiciona a seta para dentro da tela */
+        top: auto; /* Remove o alinhamento vertical */
+        bottom: 20px; /* Posiciona a seta na parte inferior */
+        transform: none; /* Remove a transformação */
+    }
+}
