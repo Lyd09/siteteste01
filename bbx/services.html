@@ -1,0 +1,471 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+        MEC-AR
+    </title>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" />
+    <link href="assets/css/styles.css" rel="stylesheet" />
+    <link href="assets/css/services_styles.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed w-full z-10">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div>
+                <img alt="Company logo with the text 'MEC-AR' in white on a black background" class="h-12" height="50"
+                    src="assets/img/logo.png" width="150" />
+            </div>
+            <div class="flex items-center space-x-4">
+                <nav class="space-x-4">
+                    <a class="header-link" href="index.html#inicio">Início</a>
+                    <a class="header-link" href="index.html#sobre-nos">Sobre</a>
+                    <a class="header-link header-link-active" href="#servicos">Serviços</a>
+                    <a class="header-link" href="index.html#contato">Contato</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="container mx-auto px-4 py-8">
+        <h2 class="text-3xl font-semibold text-center mb-8">Nossos Serviços</h2>
+        <h2 class="text-3xl font-bold text-center mb-6">
+            Nossos Serviços
+        </h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <img alt="Imagem representando um serviço de consultoria empresarial"
+                    class="w-full h-48 object-cover rounded-t-lg" height="200"
+                    src="https://storage.googleapis.com/a1aa/image/usQLaudUHnl_AS3taTqiAKRw3d_5bRW2rj3IpeOWUYQ.jpg"
+                    width="300" />
+                <h3 class="text-xl font-semibold mt-4">
+                    Serviço 1
+                </h3>
+                <p class="text-gray-600 mt-2">
+                    Descrição breve do serviço 1.
+                </p>
+                <button class="mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700"
+                    onclick="openModal('modal1')">
+                    Saiba mais
+                </button>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <img alt="Imagem representando um serviço de desenvolvimento de software"
+                    class="w-full h-48 object-cover rounded-t-lg" height="200"
+                    src="https://storage.googleapis.com/a1aa/image/YIGkEygB7mvWmrEysKMUhbW0HTWWpjgprFH9KbsHBAU.jpg"
+                    width="300" />
+                <h3 class="text-xl font-semibold mt-4">
+                    Serviço 2
+                </h3>
+                <p class="text-gray-600 mt-2">
+                    Descrição breve do serviço 2.
+                </p>
+                <button class="mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700"
+                    onclick="openModal('modal2')">
+                    Saiba mais
+                </button>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <img alt="Imagem representando um serviço de marketing digital"
+                    class="w-full h-48 object-cover rounded-t-lg" height="200"
+                    src="https://storage.googleapis.com/a1aa/image/xhp_Qd7Vz00Ft4MJdebWf7QZzy1Fey6d0wZtdNrjcmU.jpg"
+                    width="300" />
+                <h3 class="text-xl font-semibold mt-4">
+                    Serviço 3
+                </h3>
+                <p class="text-gray-600 mt-2">
+                    Descrição breve do serviço 3.
+                </p>
+                <button class="mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700"
+                    onclick="openModal('modal3')">
+                    Saiba mais
+                </button>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <img alt="Imagem representando um serviço de suporte técnico"
+                    class="w-full h-48 object-cover rounded-t-lg" height="200"
+                    src="https://storage.googleapis.com/a1aa/image/I_EhE8tpBeiuWpgXTCmRgQLbfx5F8g64NjH7BSk4QVY.jpg"
+                    width="300" />
+                <h3 class="text-xl font-semibold mt-4">
+                    Serviço 4
+                </h3>
+                <p class="text-gray-600 mt-2">
+                    Descrição breve do serviço 4.
+                </p>
+                <button class="mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700"
+                    onclick="openModal('modal4')">
+                    Saiba mais
+                </button>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <img alt="Imagem representando um serviço de design gráfico"
+                    class="w-full h-48 object-cover rounded-t-lg" height="200"
+                    src="https://storage.googleapis.com/a1aa/image/9kCWOlguzUwYWdpLCAZRVRJjPqK9wVrUM5WUaW8y3z4.jpg"
+                    width="300" />
+                <h3 class="text-xl font-semibold mt-4">
+                    Serviço 5
+                </h3>
+                <p class="text-gray-600 mt-2">
+                    Descrição breve do serviço 5.
+                </p>
+                <button class="mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700"
+                    onclick="openModal('modal5')">
+                    Saiba mais
+                </button>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <img alt="Imagem representando um serviço de treinamento corporativo"
+                    class="w-full h-48 object-cover rounded-t-lg" height="200"
+                    src="https://storage.googleapis.com/a1aa/image/bLQDKcfVq-IhHLr5E3bXcUqwmF4BAZFZkuYs9ejfj8g.jpg"
+                    width="300" />
+                <h3 class="text-xl font-semibold mt-4">
+                    Serviço 6
+                </h3>
+                <p class="text-gray-600 mt-2">
+                    Descrição breve do serviço 6.
+                </p>
+                <button class="mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700"
+                    onclick="openModal('modal6')">
+                    Saiba mais
+                </button>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <img alt="Imagem representando um serviço de análise de dados"
+                    class="w-full h-48 object-cover rounded-t-lg" height="200"
+                    src="https://storage.googleapis.com/a1aa/image/kuxSV53wFuVbQIN8D4sr9Kd-pNcPDwX2gdcKaN3Mw6c.jpg"
+                    width="300" />
+                <h3 class="text-xl font-semibold mt-4">
+                    Serviço 7
+                </h3>
+                <p class="text-gray-600 mt-2">
+                    Descrição breve do serviço 7.
+                </p>
+                <button class="mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700"
+                    onclick="openModal('modal7')">
+                    Saiba mais
+                </button>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <img alt="Imagem representando um serviço de consultoria financeira"
+                    class="w-full h-48 object-cover rounded-t-lg" height="200"
+                    src="https://storage.googleapis.com/a1aa/image/W1WEm46zInLx3Fk4_K-2CyQLpn4mWkoBKkYaiv1QZrI.jpg"
+                    width="300" />
+                <h3 class="text-xl font-semibold mt-4">
+                    Serviço 8
+                </h3>
+                <p class="text-gray-600 mt-2">
+                    Descrição breve do serviço 8.
+                </p>
+                <button class="mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700"
+                    onclick="openModal('modal8')">
+                    Saiba mais
+                </button>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <img alt="Imagem representando um serviço de gestão de projetos"
+                    class="w-full h-48 object-cover rounded-t-lg" height="200"
+                    src="https://storage.googleapis.com/a1aa/image/o6dgr12VGGOLVhVjC-qoOQwu9kUXUR4SF0vGsI2UR-0.jpg"
+                    width="300" />
+                <h3 class="text-xl font-semibold mt-4">
+                    Serviço 9
+                </h3>
+                <p class="text-gray-600 mt-2">
+                    Descrição breve do serviço 9.
+                </p>
+                <button class="mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700"
+                    onclick="openModal('modal9')">
+                    Saiba mais
+                </button>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <img alt="Imagem representando um serviço de auditoria" class="w-full h-48 object-cover rounded-t-lg"
+                    height="200"
+                    src="https://storage.googleapis.com/a1aa/image/dzRWNaq_WPx4bUsXuP9oDEQyEi7XUDMa9-QY3YDfCyY.jpg"
+                    width="300" />
+                <h3 class="text-xl font-semibold mt-4">
+                    Serviço 10
+                </h3>
+                <p class="text-gray-600 mt-2">
+                    Descrição breve do serviço 10.
+                </p>
+                <button class="mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700"
+                    onclick="openModal('modal10')">
+                    Saiba mais
+                </button>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <img alt="Imagem representando um serviço de planejamento estratégico"
+                    class="w-full h-48 object-cover rounded-t-lg" height="200"
+                    src="https://storage.googleapis.com/a1aa/image/ajGSlGS_M7p7UY8FsPUez1waxvtEjWveelTnbttdzko.jpg"
+                    width="300" />
+                <h3 class="text-xl font-semibold mt-4">
+                    Serviço 11
+                </h3>
+                <p class="text-gray-600 mt-2">
+                    Descrição breve do serviço 11.
+                </p>
+                <button class="mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700"
+                    onclick="openModal('modal11')">
+                    Saiba mais
+                </button>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <img alt="Imagem representando um serviço de recursos humanos"
+                    class="w-full h-48 object-cover rounded-t-lg" height="200"
+                    src="https://storage.googleapis.com/a1aa/image/R8JhIpyoXhiC-3oK5DDzszh_UyjI5sPm2oXoqifeABk.jpg"
+                    width="300" />
+                <h3 class="text-xl font-semibold mt-4">
+                    Serviço 12
+                </h3>
+                <p class="text-gray-600 mt-2">
+                    Descrição breve do serviço 12.
+                </p>
+                <button class="mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700"
+                    onclick="openModal('modal12')">
+                    Saiba mais
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Modais para os serviços -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2 class="text-2xl font-bold mb-4">Instalação de Ar-Condicionados Domésticos</h2>
+            <img src="https://storage.googleapis.com/a1aa/image/usQLaudUHnl_AS3taTqiAKRw3d_5bRW2rj3IpeOWUYQ.jpg"
+                alt="Serviço 1" class="w-full h-48 object-cover rounded mb-4">
+            <p>
+                Nosso serviço de instalação de ar-condicionados domésticos é projetado para oferecer conforto e
+                eficiência
+                para sua casa. Contamos com uma equipe de técnicos especializados que garantem uma instalação segura e
+                precisa, seguindo todas as normas técnicas e de segurança.
+            </p>
+            <p class="mt-4">
+                Realizamos a instalação de diversos modelos e marcas de ar-condicionados, incluindo split, janela e
+                portáteis. Além disso, oferecemos orientações sobre o melhor posicionamento do equipamento para otimizar
+                o
+                desempenho e reduzir o consumo de energia.
+            </p>
+            <p class="mt-4">
+                Benefícios do nosso serviço:
+            </p>
+            <ul class="list-disc list-inside mt-2">
+                <li>Equipe qualificada e certificada.</li>
+                <li>Garantia de instalação eficiente e sem danos.</li>
+                <li>Atendimento rápido e agendado conforme sua disponibilidade.</li>
+                <li>Suporte técnico pós-instalação.</li>
+            </ul>
+            <p class="mt-4">
+                Confie na nossa experiência para garantir o máximo de conforto térmico em sua residência. Entre em
+                contato
+                conosco para agendar sua instalação!
+            </p>
+        </div>
+    </div>
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2 class="text-2xl font-bold mb-4">Serviço 2</h2>
+            <img src="https://storage.googleapis.com/a1aa/image/YIGkEygB7mvWmrEysKMUhbW0HTWWpjgprFH9KbsHBAU.jpg"
+                alt="Serviço 2" class="w-full h-48 object-cover rounded mb-4">
+            <p>Descrição detalhada do Serviço 2: Desenvolvimento de software personalizado para atender às necessidades
+                específicas do seu negócio.</p>
+        </div>
+    </div>
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <h2 class="text-2xl font-bold mb-4">Serviço 3</h2>
+            <img src="https://storage.googleapis.com/a1aa/image/xhp_Qd7Vz00Ft4MJdebWf7QZzy1Fey6d0wZtdNrjcmU.jpg"
+                alt="Serviço 3" class="w-full h-48 object-cover rounded mb-4">
+            <p>Descrição detalhada do Serviço 3: Estratégias de marketing digital para aumentar sua presença online e
+                atrair mais clientes.</p>
+        </div>
+    </div>
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <h2 class="text-2xl font-bold mb-4">Serviço 4</h2>
+            <img src="https://storage.googleapis.com/a1aa/image/I_EhE8tpBeiuWpgXTCmRgQLbfx5F8g64NjH7BSk4QVY.jpg"
+                alt="Serviço 4" class="w-full h-48 object-cover rounded mb-4">
+            <p>Descrição detalhada do Serviço 4: Suporte técnico especializado para garantir o funcionamento ideal dos
+                seus sistemas.</p>
+        </div>
+    </div>
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal5')">&times;</span>
+            <h2 class="text-2xl font-bold mb-4">Serviço 5</h2>
+            <img src="https://storage.googleapis.com/a1aa/image/9kCWOlguzUwYWdpLCAZRVRJjPqK9wVrUM5WUaW8y3z4.jpg"
+                alt="Serviço 5" class="w-full h-48 object-cover rounded mb-4">
+            <p>Descrição detalhada do Serviço 5: Design gráfico criativo para destacar sua marca no mercado.</p>
+        </div>
+    </div>
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal6')">&times;</span>
+            <h2 class="text-2xl font-bold mb-4">Serviço 6</h2>
+            <img src="https://storage.googleapis.com/a1aa/image/bLQDKcfVq-IhHLr5E3bXcUqwmF4BAZFZkuYs9ejfj8g.jpg"
+                alt="Serviço 6" class="w-full h-48 object-cover rounded mb-4">
+            <p>Descrição detalhada do Serviço 6: Treinamento corporativo para capacitar sua equipe e melhorar a
+                produtividade.</p>
+        </div>
+    </div>
+    <div id="modal7" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal7')">&times;</span>
+            <h2 class="text-2xl font-bold mb-4">Serviço 7</h2>
+            <img src="https://storage.googleapis.com/a1aa/image/kuxSV53wFuVbQIN8D4sr9Kd-pNcPDwX2gdcKaN3Mw6c.jpg"
+                alt="Serviço 7" class="w-full h-48 object-cover rounded mb-4">
+            <p>Descrição detalhada do Serviço 7: Análise de dados para fornecer insights valiosos e melhorar a tomada de
+                decisões.</p>
+        </div>
+    </div>
+    <div id="modal8" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal8')">&times;</span>
+            <h2 class="text-2xl font-bold mb-4">Serviço 8</h2>
+            <img src="https://storage.googleapis.com/a1aa/image/W1WEm46zInLx3Fk4_K-2CyQLpn4mWkoBKkYaiv1QZrI.jpg"
+                alt="Serviço 8" class="w-full h-48 object-cover rounded mb-4">
+            <p>Descrição detalhada do Serviço 8: Consultoria financeira para otimizar seus recursos e maximizar lucros.
+            </p>
+        </div>
+    </div>
+    <div id="modal9" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal9')">&times;</span>
+            <h2 class="text-2xl font-bold mb-4">Serviço 9</h2>
+            <img src="https://storage.googleapis.com/a1aa/image/o6dgr12VGGOLVhVjC-qoOQwu9kUXUR4SF0vGsI2UR-0.jpg"
+                alt="Serviço 9" class="w-full h-48 object-cover rounded mb-4">
+            <p>Descrição detalhada do Serviço 9: Gestão de projetos para garantir a entrega eficiente e dentro do prazo.
+            </p>
+        </div>
+    </div>
+    <div id="modal10" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal10')">&times;</span>
+            <h2 class="text-2xl font-bold mb-4">Serviço 10</h2>
+            <img src="https://storage.googleapis.com/a1aa/image/dzRWNaq_WPx4bUsXuP9oDEQyEi7XUDMa9-QY3YDfCyY.jpg"
+                alt="Serviço 10" class="w-full h-48 object-cover rounded mb-4">
+            <p>Descrição detalhada do Serviço 10: Auditoria para garantir conformidade e eficiência nos processos da sua
+                empresa.</p>
+        </div>
+    </div>
+    <div id="modal11" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal11')">&times;</span>
+            <h2 class="text-2xl font-bold mb-4">Serviço 11</h2>
+            <img src="https://storage.googleapis.com/a1aa/image/ajGSlGS_M7p7UY8FsPUez1waxvtEjWveelTnbttdzko.jpg"
+                alt="Serviço 11" class="w-full h-48 object-cover rounded mb-4">
+            <p>Descrição detalhada do Serviço 11: Planejamento estratégico para alcançar seus objetivos de longo prazo.
+            </p>
+        </div>
+    </div>
+    <div id="modal12" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal12')">&times;</span>
+            <h2 class="text-2xl font-bold mb-4">Serviço 12</h2>
+            <img src="https://storage.googleapis.com/a1aa/image/R8JhIpyoXhiC-3oK5DDzszh_UyjI5sPm2oXoqifeABk.jpg"
+                alt="Serviço 12" class="w-full h-48 object-cover rounded mb-4">
+            <p>Descrição detalhada do Serviço 12: Recursos humanos para atrair, reter e desenvolver talentos na sua
+                empresa.</p>
+        </div>
+    </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer-bg footer-text footer-padding">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col items-center">
+                <div class="mb-4 self-start">
+                    <img alt="Company logo with the text 'MEC-AR' in white on a black background" class="h-12"
+                        height="50" src="assets/img/logo.png" width="150" />
+                </div>
+                <div class="footer-flex text-center">
+                    <div>
+                        <h3 class="footer-heading">
+                            Contato
+                        </h3>
+                        <p class="footer-item">
+                            <i class="fas fa-envelope mr-2">
+                            </i>
+                            contactexemplo@gmail.com
+                        </p>
+                        <p class="footer-item">
+                            <i class="fas fa-phone mr-2">
+                            </i>
+                            +55 11 1234-5678
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="footer-heading">
+                            Endereço
+                        </h3>
+                        <p class="footer-item">
+                            <i class="fas fa-map-marker-alt mr-2">
+                            </i>
+                            Rua Exemplo, 123
+                        </p>
+                        <p class="footer-item">
+                            São Paulo, SP, Brasil
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="footer-heading">
+                            Horário de atendimento
+                        </h3>
+                        <p class="footer-item">
+                            <i class="fas fa-clock mr-2">
+                            </i>
+                            Segunda a Sexta: 8h - 18h
+                        </p>
+                        <p class="footer-item">
+                            Sábado: 8h - 12h
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="footer-heading">
+                            Redes Sociais
+                        </h3>
+                        <p class="footer-item">
+                            <a class="hover:text#1d4ed8 hover:font-bold flex items-center" href="#">
+                                <i class="fab fa-facebook mr-2"></i>
+                                Facebook
+                            </a>
+                        </p>
+                        <p class="footer-item">
+                            <a class="hover:text#1d4ed8 hover:font-bold flex items-center" href="#">
+                                <i class="fab fa-instagram mr-2"></i>
+                                Instagram
+                            </a>
+                        </p>
+                        <p class="footer-item">
+                            <a class="hover:text#1d4ed8 hover:font-bold flex items-center" href="#">
+                                <i class="fab fa-linkedin mr-2"></i>
+                                LinkedIn
+                            </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-credits">
+                Criação de site por <strong><a href="https://linktr.ee/fastfilms" target="_blank">FastFilms</a></strong>
+            </div>
+            <div class="mt-4 text-center">
+            </div>
+        </div>
+        <div class="mt-4 text-center">
+        </div>
+        </div>
+    </footer>
+    <script src="assets/js/modal.js"></script>
+</body>
+
+</html>

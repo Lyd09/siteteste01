@@ -1,0 +1,90 @@
+.header-link-active {
+    color: #1d4ed8;
+    font-weight: bold;
+}
+
+/* Espaço vazio abaixo do header */
+.header-spacing {
+    height: 4rem;
+    /* Ajuste a altura conforme necessário */
+}
+
+.about-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2d3748;
+    margin-bottom: 1.5rem;
+}
+
+.about-text {
+    color: #4a5568;
+    line-height: 1.75;
+    margin-bottom: 1.5rem;
+}
+
+.about-image {
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2d3748;
+    margin-bottom: 1.5rem;
+}
+
+.section-text {
+    color: #4a5568;
+    line-height: 1.75;
+    margin-bottom: 1.5rem;
+}
+
+.section-image {
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Define 2 colunas */
+    gap: 1.5rem;
+}
+
+.team-card {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.team-image {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.team-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #2d3748;
+    margin-bottom: 0.5rem;
+}
+
+.team-role {
+    color: #4a5568;
+}
+
+
+.footer-item a {
+    color: #78818d; /* Define a cor inicial dos links */
+}
+
+.footer-item a:hover {
+    color: #1d4ed8; /* Cor ao passar o mouse */
+    font-weight: bold; /* Negrito no hover */
+}

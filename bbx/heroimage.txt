@@ -1,0 +1,21 @@
+.hero-image-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: #1d4ed8;
+    transform: skewX(-12deg);
+}
+
+@media (min-width: 1024px) {
+    .hero-image-overlay {
+        transform: skewX(-6deg);
+    }
+}
+
+.hero-image {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
