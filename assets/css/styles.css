@@ -333,4 +333,19 @@ footer .footer-flex {
         font-size: 0.75rem;
         margin-bottom: 0.5rem;
     }
+
+    .right-arrow {
+        position: relative; /* Remove o posicionamento absoluto */
+        right: auto; /* Remove o deslocamento para a direita */
+        top: auto; /* Remove o deslocamento vertical */
+        margin-top: 20px; /* Adiciona espaço acima da seta */
+        display: block; /* Garante que a seta seja exibida */
+        text-align: center; /* Centraliza horizontalmente */
+    }
+
+    #servicos .grid {
+        display: flex;
+        flex-direction: column; /* Empilha os serviços verticalmente */
+        align-items: center; /* Centraliza os serviços */
+    }
 }

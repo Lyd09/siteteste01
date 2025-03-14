@@ -22,16 +22,36 @@
                     src="assets/img/logo.png" width="150" />
             </div>
             <div class="flex items-center space-x-4">
-                <nav class="space-x-4">
+                <!-- Botão de hambúrguer para dispositivos móveis -->
+                <button id="hamburger-btn" class="block md:hidden text-gray-800 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+                <!-- Menu de navegação para desktop -->
+                <nav class="hidden md:flex space-x-4">
                     <a class="header-link" href="#inicio">Início</a>
                     <a class="header-link" href="#sobre-nos">Sobre</a>
                     <a class="header-link" href="#servicos">Serviços</a>
                     <a class="header-link" href="#contato">Contato</a>
-
                 </nav>
             </div>
         </div>
     </header>
+
+    <!-- Menu lateral para dispositivos móveis -->
+    <div id="mobile-menu" class="fixed inset-0 bg-gray-800 bg-opacity-75 z-50 hidden">
+        <div class="bg-white w-64 h-full shadow-md absolute right-0">
+            <button id="close-menu" class="text-gray-800 text-2xl p-4 focus:outline-none">
+                &times;
+            </button>
+            <nav class="flex flex-col space-y-4 p-4">
+                <a class="header-link text-gray-800" href="#inicio">Início</a>
+                <a class="header-link text-gray-800" href="#sobre-nos">Sobre</a>
+                <a class="header-link text-gray-800" href="#servicos">Serviços</a>
+                <a class="header-link text-gray-800" href="#contato">Contato</a>
+            </nav>
+        </div>
+    </div>
+
     <!-- Hero Section -->
     <section id="inicio" class="hero-section">
         <div class="hero-container">
@@ -86,7 +106,8 @@
         <div class="bg-gray-200">
             <section id="servicos" class="container mx-auto px-4 py-16 relative">
                 <h2 class="text-3xl font-bold text-gray-800 text-center">
-                    Nossos Serviços </h2>
+                    Nossos Serviços
+                </h2>
                 <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8 relative">
                     <div class="bg-white p-6 rounded shadow-md">
                         <img alt="Serviço 1 image with a placeholder text 'Serviço 1'"
@@ -99,6 +120,10 @@
                         <p class="mt-2 text-gray-600">
                             Serviço completo para garantir o melhor desempenho do seu equipamento.
                         </p>
+                        <a href="services.html"
+                            class="mt-4 inline-block bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">
+                            Saiba mais
+                        </a>
                     </div>
                     <div class="bg-white p-6 rounded shadow-md">
                         <img alt="Serviço 2 image with a placeholder text 'Serviço 2'"
@@ -112,6 +137,10 @@
                             Serviços especializados de manutenção e reparo para manter suas operações funcionando sem
                             problemas.
                         </p>
+                        <a href="services.html"
+                            class="mt-4 inline-block bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">
+                            Saiba mais
+                        </a>
                     </div>
                     <div class="bg-white p-6 rounded shadow-md">
                         <img alt="Serviço 3 image with a placeholder text 'Serviço 3'"
@@ -125,12 +154,16 @@
                             Soluções personalizadas adaptadas para atender às suas necessidades e exigências
                             específicas.
                         </p>
+                        <a href="services.html"
+                            class="mt-4 inline-block bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">
+                            Saiba mais
+                        </a>
                     </div>
-                    <a href="services.html">
-                        <i
-                            class="fas fa-arrow-right right-arrow text-black text-2xl absolute right-[-50px] top-1/2 transform -translate-y-1/2"></i>
-                    </a>
                 </div>
+                <a href="services.html">
+                    <i
+                        class="fas fa-arrow-right right-arrow text-black text-2xl absolute right-[-50px] top-1/2 transform -translate-y-1/2"></i>
+                </a>
             </section>
         </div>
         <!-- Feedback Section -->
@@ -156,7 +189,8 @@
                     <div class="bg-white p-6 rounded shadow-md">
                         <img alt="Customer 2 image with a placeholder text 'Customer 2'"
                             class="w-16 h-16 object-cover rounded-full mx-auto" height="64"
-                            src="https://blog.ipog.edu.br/wp-content/uploads/2018/03/empreendedores-1280x720.jpg" width="64" />
+                            src="https://blog.ipog.edu.br/wp-content/uploads/2018/03/empreendedores-1280x720.jpg"
+                            width="64" />
                         <h3 class="mt-4 text-xl font-bold text-gray-800 text-center">
                             Customer 2
                         </h3>
@@ -167,7 +201,8 @@
                     <div class="bg-white p-6 rounded shadow-md">
                         <img alt="Customer 3 image with a placeholder text 'Customer 3'"
                             class="w-16 h-16 object-cover rounded-full mx-auto" height="64"
-                            src="https://www.consultinghouse.com.br/wp-content/uploads/2018/09/adult-beard-blur-842567-768x512.jpg" width="64" />
+                            src="https://www.consultinghouse.com.br/wp-content/uploads/2018/09/adult-beard-blur-842567-768x512.jpg"
+                            width="64" />
                         <h3 class="mt-4 text-xl font-bold text-gray-800 text-center">
                             Customer 3
                         </h3>
@@ -329,6 +364,7 @@
         </footer>
         <script src="assets/js/nav_link.js"></script>
         <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <script src="assets/js/menu_index.js"></script>
 </body>
 
 </html>

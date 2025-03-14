@@ -25,7 +25,12 @@
                     src="assets/img/logo.png" width="150" />
             </div>
             <div class="flex items-center space-x-4">
-                <nav class="space-x-4">
+                <!-- Botão de hambúrguer para dispositivos móveis -->
+                <button id="hamburger-btn-services" class="block md:hidden text-gray-800 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+                <!-- Menu de navegação para desktop -->
+                <nav class="hidden md:flex space-x-4">
                     <a class="header-link" href="index.html#inicio">Início</a>
                     <a class="header-link" href="index.html#sobre-nos">Sobre</a>
                     <a class="header-link header-link-active" href="#servicos">Serviços</a>
@@ -34,6 +39,26 @@
             </div>
         </div>
     </header>
+
+    <!-- Menu lateral para dispositivos móveis -->
+    <div id="mobile-menu-services" class="fixed inset-0 bg-gray-800 bg-opacity-75 z-50 hidden">
+        <div class="bg-white w-64 h-full shadow-md absolute right-0">
+            <button id="close-menu-services" class="text-gray-800 text-2xl p-4 focus:outline-none">
+                &times;
+            </button>
+            <nav class="flex flex-col space-y-4 p-4">
+                <a class="header-link text-gray-800" href="index.html#inicio">Início</a>
+                <a class="header-link text-gray-800" href="index.html#sobre-nos">Sobre</a>
+                <a class="header-link text-gray-800" href="#servicos">Serviços</a>
+                <a class="header-link text-gray-800" href="index.html#contato">Contato</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Espaço vazio abaixo do header -->
+    <div class="header-spacing"></div>
+
+    <!-- Main Content -->
     <div class="container mx-auto px-4 py-8">
         <h2 class="text-3xl font-semibold text-center mb-8">Nossos Serviços</h2>
         <h2 class="text-3xl font-bold text-center mb-6">
@@ -466,6 +491,7 @@
         </div>
     </footer>
     <script src="assets/js/modal.js"></script>
+    <script src="assets/js/menu_services.js"></script>
 </body>
 
 </html>
